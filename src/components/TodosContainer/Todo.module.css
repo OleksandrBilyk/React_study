@@ -1,0 +1,15 @@
+.todos_page{
+    height: auto;
+    width: 98vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+.title{
+
+}
+.task{
+    margin: 0 15px 10px 0;
+    height: 18vh;
+    width: 23vw;
+    border: #561c1c 1px solid;
+}
