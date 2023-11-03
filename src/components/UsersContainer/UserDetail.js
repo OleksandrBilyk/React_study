@@ -1,10 +1,11 @@
 import {useNavigate} from "react-router-dom";
+import style from "./User.module.css"
 
 const UserDetail = ({user}) => {
     const {id, name, username, email, address, phone, website, company} = user;
     const navigate = useNavigate();
     return (
-        <div>
+        <div className={style.user_card}>
             <div>id: {id}</div>
             <div>name: {name}</div>
             <div>username: {username}</div>
@@ -14,7 +15,7 @@ const UserDetail = ({user}) => {
             <div>phone: {phone}</div>
             <div>website: {website}</div>
             <div>company: {company.name}</div>
-            <button onClick={()=>navigate(`${id}`)}>post of current user</button>
+            <button className={style.button_post} onClick={()=>navigate(`${id}`)}>post of current user</button>
         </div>
     );
 };

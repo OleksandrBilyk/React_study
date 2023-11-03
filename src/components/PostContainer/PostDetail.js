@@ -1,6 +1,7 @@
 
 import {Comment} from "../CommentContainer/Comment";
 
+
 const PostDetail = ({post, comments}) => {
     const {id, userId, title, body} = post;
     return (

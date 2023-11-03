@@ -1,7 +1,7 @@
 import {useEffect, useState} from "react";
 import {userService} from "../../services/userService";
 import {User} from "./User";
-
+import style from "./User.module.css"
 const Users = () => {
     const [users, setUsers] = useState([]);
 
@@ -11,7 +11,7 @@ const Users = () => {
     }, [])
 
     return (
-        <div>
+        <div className={style.users}>
             {users.map(user => <User key={user.id} user={user}/>)}
         </div>
     );
